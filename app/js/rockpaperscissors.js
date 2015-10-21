@@ -84,11 +84,12 @@ function playToFive() {
         }
         else {
             console.log("Let's try that again...")
+            
         }
 
     }
     
- return "The final score of the game is " [playerWins, computerWins];
+ return ("The final score of the game is " + [playerWins, computerWins]);
 
 }
 
