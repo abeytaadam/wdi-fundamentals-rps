@@ -64,22 +64,22 @@ function playToFive() {
     var computerWins = 0;
 
     while (playerWins < 5 && computerWins < 5) {
-        var playerChose = getPlayerMove();
-        var computerChose = getComputerMove();
-        var roundWinner = getWinner(playerChose,computerChose);
+        var playerMove = getPlayerMove();
+        var computerMove = getComputerMove();
+        var roundWinner = getWinner(playerMove,computerMove);
         if (roundWinner === "player") {
             playerWins += 1;
-            console.log('Player chose ' + playerChose + ' while Computer chose ' + computerChose);
+            console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
             console.log('The score is currently ' + playerWins + ' to ' + computerWins);
         }
         else if (roundWinner === "computer") {
             computerWins += 1;
-            console.log('Player chose ' + playerChose + ' while Computer chose ' + computerChose);
+            console.log('Player chose ' + playerMove + ' while Computer chose ' + computerMove);
             console.log('The score is currently ' + playerWins + ' to ' + computerWins);
         }
         else if (roundWinner === "tie"){
             console.log("It's a tie")
-            console.log('Both Player and Computer chose ' + playerChose);
+            console.log('Both Player and Computer chose ' + playerMove);
             console.log('The score is currently ' + playerWins + ' to ' + computerWins);
         }
         else {
